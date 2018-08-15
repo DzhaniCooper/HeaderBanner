@@ -1,0 +1,98 @@
+/* Placing header section in the middle, max width and max height and little gap on top */
+.header {
+    margin: 0 auto;
+    margin-top: 1%;
+    max-width: 930px;
+    max-height: 300px;
+}
+
+/* Making the whole text responsive depends on width and height of the screen */
+.headerOnLeft {
+    font-size:2.5vw;
+}
+.headerOnRight {
+    font-size: 1.5vw;
+}
+p {
+    font-size: 2vw;
+}
+.headerImage{
+    position: absolute;
+    max-height: 100%;
+}
+/* End of this text styling */
+
+/* Some styling for the left side of the header section */
+.header-left {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top:5%;
+    bottom:7%;
+    left: 4%;
+    right:4%;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+    max-width: 390px;
+    max-height: 200px;
+    padding: 2% 3%;
+    position: absolute;
+}
+
+/* Styling the button in the left side of the header section */
+button {
+    width: 85%;
+    max-width: 100%;
+    max-height: auto;
+    color: #FFFFFF;
+    background-color: #0277BD;
+    border: none;
+    bottom:10%;
+    position: absolute;
+    cursor: pointer;   
+}
+
+/* Styling the right "TEST" part of the header section */
+.header-right {
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #3E3E3E;
+    width: 15%;
+    max-height: 35px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 1vh;
+}
+
+/* Tis "media query" code is to keep original requerments up until the phone devices (Placing stating damentions for the fonts) */
+@media screen and (min-width: 870px) {
+   .headerOnRight {
+       font-size: 15px;
+    }
+    .headerOnLeft {
+        font-size: 25px;
+     }
+    p {
+        font-size: 15px;
+    }
+    button {
+        height: 50px;
+    }
+    .span {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+  }
+
+  /* THis is another "media query" code to make sure button is responsive and fits within the div */
+  @media screen and (max-width: 450px) {
+      button{
+          height: 15px;
+          width: 90%;
+      }
+      .buttonText {
+        font-size: 8px;
+    }
+   }
